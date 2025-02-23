@@ -6,51 +6,84 @@
     <title>Lenox Blessed | Dancer & Choreographer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            background: #121212;
+            color: #fff;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1100px;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
         header {
-            background: #222;
+            background: #1e1e1e;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
-        }
-        section {
-            padding: 20px;
-            background: white;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         h1, h2 {
-            color: #222;
+            color: #f39c12;
+        }
+        section {
+            background: #1e1e1e;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         li {
-            padding: 5px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
         }
         .social-links a {
-            margin-right: 15px;
+            margin: 10px;
             text-decoration: none;
-            color: #222;
-            font-weight: bold;
+            color: white;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+        .social-links a:hover {
+            color: #f39c12;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #222;
+            background: #111;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #f39c12;
             color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background: #e67e22;
         }
     </style>
 </head>
@@ -58,58 +91,40 @@
     <header>
         <h1>Lenox Blessed</h1>
         <p>Dancer | Choreographer | Digital Content Creator | Performer</p>
-        <p>@LENOXBLESSED_OFFICIAL</p>
     </header>
     
     <div class="container">
         <section>
             <h2>Biography</h2>
-            <p>Immersed in dance since the age of 7, Lenox Blessed is a dynamic and versatile artist known for his unique style, creativity, and captivating stage presence...</p>
+            <p>Lenox Blessed is a dynamic and versatile artist known for his unique style, creativity, and captivating stage presence. His journey has seen him grace stages with renowned dance crews like House of Swat, Young Impact, Young TIT, and Kimya Kimya, leaving an indelible mark on the Kenyan dance scene.</p>
         </section>
 
         <section>
             <h2>Experience & Achievements</h2>
-            <h3>Professional Dance Career</h3>
-            <p>Lenox's choreography blends street dance styles with fresh, innovative movements...</p>
             <ul>
                 <li>1st Place, Dance Afrique Season 2 (Solo & Duo)</li>
                 <li>Choreographer for Tanasha Donna's music video</li>
                 <li>Led the viral "Bazokizo" dance challenge</li>
-                <li>Dance mentor for Safaricom, conducting talent discovery tours</li>
             </ul>
         </section>
         
-        <section>
-            <h2>Awards & Features</h2>
-            <ul>
-                <li>Most Promising Dancer - 2016</li>
-                <li>Best Male Dancer - 2017</li>
-                <li>Best Solo Dancer - 2022</li>
-                <li>Nominated for Best Male Dancer - 2024</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Key Collaborations</h2>
-            <ul>
-                <li>Tanasha Donna: "Sawa" Dance Video</li>
-                <li>Ayra Starr: "The Year I Turned 21"</li>
-                <li>Bruz Newton ft. Collo: "Bazokizo"</li>
-            </ul>
-        </section>
-
         <section>
             <h2>Social Media & Digital Presence</h2>
-            <p class="social-links">
-                <a href="https://instagram.com/LENOXBLESSED_OFFICIAL" target="_blank">Instagram</a> |
-                <a href="https://tiktok.com/@LENOXBLESSED_OFFICIAL" target="_blank">TikTok</a> |
-                <a href="https://youtube.com/c/LenoxBlessed" target="_blank">YouTube</a>
-            </p>
+            <div class="social-links">
+                <a href="https://instagram.com/LENOXBLESSED_OFFICIAL" target="_blank">📷 Instagram</a>
+                <a href="https://tiktok.com/@LENOXBLESSED_OFFICIAL" target="_blank">🎵 TikTok</a>
+                <a href="https://youtube.com/c/LenoxBlessed" target="_blank">▶️ YouTube</a>
+            </div>
         </section>
         
         <section>
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:lenoxblessed12@gmail.com">lenoxblessed12@gmail.com</a></p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </div>
     
