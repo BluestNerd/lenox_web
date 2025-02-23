@@ -168,3 +168,33 @@ nav ul li a:hover::after{
     background: gray;
     transform: translateY(-10px);
 }
+.services {
+    background: #111;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2, .services h3 {
+    color: #a68eff;
+    text-transform: uppercase;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #a68eff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
